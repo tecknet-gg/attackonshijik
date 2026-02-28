@@ -1,0 +1,179 @@
+[gd_scene load_steps=7 format=3 uid="uid://b3bkv2cabal71"]
+
+[ext_resource type="PackedScene" uid="uid://cyb8shwp4pns6" path="res://scenes/obstacle1.tscn" id="1_g7bli"]
+[ext_resource type="Texture2D" uid="uid://cn1jjgwabsaop" path="res://assets/textures/New Piskel from Piskel (1).png" id="1_lkub2"]
+[ext_resource type="PackedScene" uid="uid://chfc2j7u11riv" path="res://scenes/player.tscn" id="2_ko4w8"]
+[ext_resource type="PackedScene" uid="uid://bax8c3s64t8tb" path="res://scenes/bullet.tscn" id="3_uolpa"]
+[ext_resource type="PackedScene" uid="uid://cwwxgaii482xk" path="res://scenes/melee.tscn" id="4_0vg2w"]
+[ext_resource type="PackedScene" uid="uid://38572pq5kxo3" path="res://scenes/slow.tscn" id="6_vf4su"]
+
+[node name="World" type="Node2D"]
+
+[node name="MeshInstance2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(932, 357.204)
+rotation = -6.28319
+scale = Vector2(-105.81, 63.018)
+texture = ExtResource("1_lkub2")
+
+[node name="melee14" parent="." instance=ExtResource("4_0vg2w")]
+position = Vector2(565, 451)
+scale = Vector2(9.64273, 12.836)
+
+[node name="melee8" parent="." instance=ExtResource("4_0vg2w")]
+position = Vector2(858, 303)
+scale = Vector2(9.64273, 12.836)
+
+[node name="melee11" parent="." instance=ExtResource("4_0vg2w")]
+position = Vector2(1433, 787)
+scale = Vector2(9.64273, 12.836)
+
+[node name="melee12" parent="." instance=ExtResource("4_0vg2w")]
+position = Vector2(1382, 756)
+scale = Vector2(9.64273, 12.836)
+
+[node name="melee13" parent="." instance=ExtResource("4_0vg2w")]
+position = Vector2(1390, 833)
+scale = Vector2(9.64273, 12.836)
+
+[node name="melee7" parent="." instance=ExtResource("4_0vg2w")]
+position = Vector2(892, 37)
+scale = Vector2(9.64273, 12.836)
+
+[node name="melee15" parent="." instance=ExtResource("4_0vg2w")]
+position = Vector2(1357, -41)
+scale = Vector2(9.64273, 12.836)
+
+[node name="melee16" parent="." instance=ExtResource("4_0vg2w")]
+position = Vector2(1320, -9)
+scale = Vector2(9.64273, 12.836)
+
+[node name="melee17" parent="." instance=ExtResource("4_0vg2w")]
+position = Vector2(1357, 30)
+scale = Vector2(9.64273, 12.836)
+
+[node name="melee2" parent="." instance=ExtResource("4_0vg2w")]
+position = Vector2(345, 309)
+scale = Vector2(-9.23067, 10.9691)
+
+[node name="Obstacle" parent="." instance=ExtResource("1_g7bli")]
+position = Vector2(38, 146)
+scale = Vector2(12.0083, 1.11751)
+
+[node name="Obstacle9" parent="." instance=ExtResource("1_g7bli")]
+position = Vector2(-118, 197)
+rotation = 1.5708
+scale = Vector2(6, 0.559)
+
+[node name="Obstacle11" parent="." instance=ExtResource("1_g7bli")]
+position = Vector2(1618, -42)
+rotation = 1.5708
+scale = Vector2(9.11056, 1.03814)
+
+[node name="Obstacle12" parent="." instance=ExtResource("1_g7bli")]
+position = Vector2(1440, 114)
+scale = Vector2(9.11056, 1.03814)
+
+[node name="Obstacle13" parent="." instance=ExtResource("1_g7bli")]
+position = Vector2(1309, 209)
+rotation = 1.5708
+scale = Vector2(9.11056, 1.03814)
+
+[node name="Obstacle15" parent="." instance=ExtResource("1_g7bli")]
+position = Vector2(1379, 443)
+rotation = 0.8199
+scale = Vector2(9.11056, 1.03814)
+
+[node name="Obstacle8" parent="." instance=ExtResource("1_g7bli")]
+position = Vector2(621, 183)
+scale = Vector2(7.50881, -8.7897)
+
+[node name="Obstacle14" parent="." instance=ExtResource("1_g7bli")]
+position = Vector2(1088, 492)
+rotation = -1.26885
+scale = Vector2(5.548, -6.494)
+skew = 0.190241
+
+[node name="Obstacle5" parent="." instance=ExtResource("1_g7bli")]
+position = Vector2(800, -127)
+scale = Vector2(44.0829, 1.46766)
+
+[node name="Obstacle7" parent="." instance=ExtResource("1_g7bli")]
+position = Vector2(517, 565)
+scale = Vector2(20.5861, 1.54833)
+
+[node name="Obstacle4" parent="." instance=ExtResource("1_g7bli")]
+position = Vector2(274, 4.76837e-07)
+rotation = 1.5708
+scale = Vector2(8.80393, 1.47975)
+
+[node name="Obstacle6" parent="." instance=ExtResource("1_g7bli")]
+position = Vector2(281, 377)
+rotation = 1.5708
+scale = Vector2(8.80393, 1.47975)
+
+[node name="Obstacle2" parent="." instance=ExtResource("1_g7bli")]
+position = Vector2(40, 289)
+scale = Vector2(12.2442, 1.15931)
+
+[node name="Obstacle3" parent="." instance=ExtResource("1_g7bli")]
+position = Vector2(1007, 647)
+rotation = 3.80831
+scale = Vector2(9.00001, 1)
+
+[node name="Obstacle10" parent="." instance=ExtResource("1_g7bli")]
+position = Vector2(1090, 807)
+rotation = 1.5708
+scale = Vector2(9.00001, 1)
+
+[node name="Obstacle16" parent="." instance=ExtResource("1_g7bli")]
+position = Vector2(1154, 1030)
+rotation = 0.837758
+scale = Vector2(9.00001, 1)
+
+[node name="Obstacle18" parent="." instance=ExtResource("1_g7bli")]
+position = Vector2(1398, 946)
+rotation = 2.17119
+scale = Vector2(13.833, -1.1)
+
+[node name="Obstacle17" parent="." instance=ExtResource("1_g7bli")]
+position = Vector2(1486, 683)
+rotation = 1.5708
+scale = Vector2(10.805, 1.2)
+
+[node name="Player" parent="." instance=ExtResource("2_ko4w8")]
+position = Vector2(-78, 217)
+
+[node name="Node" parent="." instance=ExtResource("3_uolpa")]
+
+[node name="melee" parent="." instance=ExtResource("4_0vg2w")]
+position = Vector2(654, -35)
+scale = Vector2(10.72, 11.28)
+
+[node name="slow" parent="." instance=ExtResource("6_vf4su")]
+position = Vector2(1036, 184)
+scale = Vector2(20.72, 20.4497)
+
+[node name="slow4" parent="." instance=ExtResource("6_vf4su")]
+position = Vector2(1501, 1)
+scale = Vector2(20.72, 20.4497)
+
+[node name="slow5" parent="." instance=ExtResource("6_vf4su")]
+position = Vector2(1245, 931)
+scale = Vector2(20.72, 20.4497)
+
+[node name="melee4" parent="." instance=ExtResource("4_0vg2w")]
+position = Vector2(7.38523e+07, 6.11169e+07)
+scale = Vector2(1.51764e+06, 2.05994e+06)
+
+[node name="melee5" parent="." instance=ExtResource("4_0vg2w")]
+position = Vector2(8.48699e+09, 7.77643e+09)
+scale = Vector2(1.74405e+08, 2.62104e+08)
+
+[node name="slow2" parent="." instance=ExtResource("6_vf4su")]
+position = Vector2(419, -21)
+scale = Vector2(22.3513, 18.525)
+
+[node name="slow3" parent="." instance=ExtResource("6_vf4su")]
+position = Vector2(2.87668e+06, 523683)
+scale = Vector2(75933.7, 17368.7)

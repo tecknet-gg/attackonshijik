@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://cwwxgaii482xk"]
+
+[ext_resource type="Script" path="res://scripts/melee.gd" id="1_yp2c6"]
+[ext_resource type="Texture2D" uid="uid://ce2jkqgcnt0ar" path="res://assets/textures/Image.png" id="2_vnlhe"]
+[ext_resource type="Script" path="res://scenes/health_label.gd" id="3_gcjal"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hbob7"]
+radius = 2.0
+height = 4.0
+
+[node name="melee" type="CharacterBody2D"]
+collision_layer = 770
+collision_mask = 777
+script = ExtResource("1_yp2c6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1.42109e-14, 0)
+scale = Vector2(0.240616, 0.250027)
+texture = ExtResource("2_vnlhe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+texture_filter = 1
+shape = SubResource("CapsuleShape2D_hbob7")
+
+[node name="HealthLabel" type="Label" parent="."]
+modulate = Color(1, 0, 0, 1)
+z_index = 10
+texture_filter = 1
+offset_left = -1.0
+offset_top = -5.0
+offset_right = 39.0
+offset_bottom = 18.0
+rotation = 1.567
+scale = Vector2(0.114297, -0.0884853)
+text = "4"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_gcjal")
