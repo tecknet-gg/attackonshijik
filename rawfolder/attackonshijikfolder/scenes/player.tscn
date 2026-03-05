@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://chfc2j7u11riv"]
+
+[ext_resource type="Script" path="res://scenes/player.gd" id="1_jmmp5"]
+[ext_resource type="Texture2D" uid="uid://bmutq20lnrjpn" path="res://assets/textures/characterhands.png" id="2_paswg"]
+[ext_resource type="Texture2D" uid="uid://b46ub7h4wfvqx" path="res://assets/textures/gun1.png" id="3_oqbxq"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_x4l5f"]
+radius = 0.06
+height = 0.28
+
+[node name="Player" type="CharacterBody2D" groups=["player"]]
+scale = Vector2(1.60556, 1.60556)
+collision_mask = 10
+script = ExtResource("1_jmmp5")
+
+[node name="Body" type="Sprite2D" parent="."]
+modulate = Color(1, 0.796078, 0, 1)
+texture_filter = 1
+position = Vector2(0, 3.11417)
+texture = ExtResource("2_paswg")
+
+[node name="Gun" type="Sprite2D" parent="Body"]
+texture_filter = 1
+position = Vector2(14.3252, 0)
+scale = Vector2(1.33827, 0.870971)
+texture = ExtResource("3_oqbxq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(100, 100)
+shape = SubResource("CapsuleShape2D_x4l5f")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+scale = Vector2(-1.81413, -0.960367)
+zoom = Vector2(4, 4)
+
+[node name="HealthLabel" type="Label" parent="." groups=["player"]]
+modulate = Color(0, 1, 0.0333333, 1)
+texture_filter = 1
+offset_left = -8.71968
+offset_top = -29.8961
+offset_right = 31.2803
+offset_bottom = -6.89607
+scale = Vector2(0.446823, 0.70963)
+text = "25"
+horizontal_alignment = 1
+vertical_alignment = 1
